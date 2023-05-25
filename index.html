@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- top header section -->
+      <h1>Sudoku Solver</h1>
+      <nav>
+        <ul>  
+          <h4>Created by Ryan Kim</h4>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+        <div class="box-left">
+          <h2 id = "boardTitle">The Board</h2>
+          
+          <table>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+            <tr>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+              <td><div  contenteditable="true" oninput="handleInput(event)"></div></td>
+            </tr>
+          </table>
+          <script src="handle.js"></script>
+          <button class = "button2" onclick="solveSudokuAndUpdateGrid()">Solve</button>
+          <button class = "button2" onclick="reset()">Reset</button>
+          
+
+        </div>
+        <div class="box-right">
+          <div id = "code">
+            <h2>The Code</h2>
+            <div id="howText">The Backtracking Algorithm is a complicated brute-force method that solves guess and check 
+              problems like Sudoku. Starting from the first empty cell found, it recursively traverses the rest of the empty 
+              cells in row major order, substituting values starting from 1 to 9 and checking if its valid. This diagram shows a basic
+              sketch of how this algorithm runs. 
+              <br><br>
+              <img src="88166.jpg" alt = "Diagram" width="80%" height="80%">
+              <br><br>
+              (If you want to see exactly how I implemented the backtracking algorithm, look through the solveSudokuAndUpdateGrid, 
+              solveSudoku, and isValidMove functions in my <a href = "https://github.com/ryankim8/Sodoku-Solver" target=”_blank”>github repository</a>)
+              </div>
+              <br><br>
+
+            <button class = "button" id = "statsButton" onclick = "changetoStats()">Statistics</button>
+
+          </div>
+          <div id = "stats" class = "hidden">
+            <h2>The Statistics</h2>
+            
+            <div id = "rankTitle"><b>Difficulty ranking: </b> <div id = "ranking"></div></div>
+            <br>
+            <div  id = "howText">
+              Ranking of difficulty is caclulated with two points of data. One is the amount of cells or squares that are filled up. 
+              An input of less filled cells will be harder to solve than an input with more cells because of the nature of sudoku puzzles
+              and how different cells affect the solution. The second data point is the amount of filled-in cells in each 3x3 grid. 
+              If there are more grids with less filled-in cells then it is harder to solve. For instance, an input where each grid only 
+              has two numbers filled-in will be harder to solve than an input with four numbers filled in per grid. (If you want to look
+              at exactly how its ranked, the code will be in the "calculateDifficulty" function in my 
+              <a href = "https://github.com/ryankim8/Sodoku-Solver" target=”_blank”>github repository</a>
+              )
+              <br><br>
+
+              <h4>The Ranks</h4>
+              <div>&#x2022; Super Easy</div>
+              <div>&#x2022; Easy</div>
+              <div>&#x2022; Intermediate</div>
+              <div>&#x2022; Challenging</div>
+              <div>&#x2022; Hard</div>
+              <div>&#x2022; Way Too Hard</div>
+              <div>&#x2022; Impossible</div>
+              <br><br>
+  
+  
+              However, due to the possibility of many solutions to a puzzle, especially with inputs with small amounts of filled-in cells
+              the ranking can be inaccurate. For instance, an input with only 1 cell filled in can be hard or easy, depending on the solution
+              you want. The solution that will be returned by this algorithm is explained in the "How it works" tab. 
+              <br><br>
+  
+            </div>
+            <button class = "button" id = "howButton" onclick = "changetoHow()">How it works</button>
+          </div>
+        </div>
+      </div>
+
+      
+
+    <footer>
+      <!-- footer section -->
+      <p>2023 AP Computer Science Project</p>
+    </footer>
+  </body>
+</html>

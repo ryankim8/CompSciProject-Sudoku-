@@ -1,0 +1,158 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+  
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0%;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.container {
+  display: flex;
+
+}
+
+/* Left box */
+.box-left {
+  flex-basis: 50%;
+  background-color: lightblue;
+  padding: 20px;
+  height: 625px;
+}
+
+/* Right box */
+.box-right {
+  flex-basis: 50%;
+  background-color: lightgreen;
+  padding: 20px;
+  height: 625px;
+}
+
+/* Media query for smaller screens */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  margin:1em auto;
+}
+td {
+  height:50px;
+  width:50px;
+  border:1px solid;
+  text-align:center;
+  
+}
+
+.hasNum {
+  color: #00628B;
+}
+
+.notNum {
+  color: #000000;
+}
+td:first-child {
+  border-left:solid;
+}
+td:nth-child(3n) {
+  border-right:solid ;
+}
+tr:first-child {
+  border-top:solid;
+}
+tr:nth-child(3n) td {
+  border-bottom:solid ;
+}
+div[contenteditable="true"] {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* caret-color: transparent; */
+  line-height: 1.93em;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  z-index: auto;
+  position: absolute;
+  border-radius: 3px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.button2:hover {background-color: #3e8e41}
+
+.hidden {
+  visibility: hidden;
+}
+
+#code {
+  position: absolute;
+  z-index: auto;
+}
+
+#stats {
+  position: absolute;
+  z-index: auto;
+}
+
+body {
+  margin: 0%;
+}
+
+#howText {
+  margin-right: 10px;
+}
+
+#rankTitle {
+  margin: 0em;
+  width: 200px;
+  border: 0em;
+}
