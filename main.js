@@ -24,7 +24,7 @@ function handleInput(event) {
 }
 
 setWriteable(false);
-
+ 
 function calculateDifficulty(arr) {
   score = 0
 
